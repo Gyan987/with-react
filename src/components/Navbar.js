@@ -1,14 +1,17 @@
 import React from 'react'
+import Footer from './Footer'
 
-const Navbar = () => {
+const Navbar = ({ logoText }) => {
   return (
     <div>
+      <div className="logo">{logoText}</div>
       <ul>  
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
         <li>Login</li>
       </ul>
+      <Footer />
     </div>
   )
 }
